@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
+
+    <bean name="mnaBase" class="org.opentestsystem.shared.mna.client.domain.MnaBase">
+        <property name="component" value="junit:test"/>
+        <property name="server" value="test-server1"/>
+        <property name="node" value="test-node1"/>
+    </bean>
+    
+     <bean id="abstractMnaClient" class="org.opentestsystem.shared.mna.client.service.AbstractMnaClient" abstract="true">
+        <property name="restTemplate" ref="restTemplate"/>
+        <property name="mnaUri" value="http://foo.bar.xyz"/>
+    </bean>
+
+    <bean id="mnaLogClient" class="org.opentestsystem.shared.mna.client.service.MnaLogClient" parent="abstractMnaClient">
+        <property name="baseInfo" ref="mnaBase"/>
+    </bean>
+
+</beans>

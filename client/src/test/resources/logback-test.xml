@@ -1,0 +1,22 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+            by default -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -
+                %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework.data" level="info" />
+    <logger name="org.springframework.core" level="info" />
+    <logger name="org.springframework.beans" level="info" />
+    <logger name="org.springframework.context" level="info" />
+    <logger name="org.opentestsystem.shared.mna" level="debug" />
+    <logger name="org.opentestsystem.shared.common.logging" level="debug"/>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

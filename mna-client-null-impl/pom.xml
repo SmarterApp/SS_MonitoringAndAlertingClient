@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <artifactId>monitoring-alerting.client-null-impl</artifactId>
+  <name>Smarter Balanced #11 Monitoring and Alerting - Null Client</name>
+  <description>Null implementation of an MnA client. Can be used as a drop in replacement for mna-client.</description>
+  
+  <parent>
+    <groupId>org.opentestsystem.shared</groupId>
+    <artifactId>monitoring-alerting-client.parent</artifactId>
+    <version>0.0.4</version>
+  </parent>
+  
+  <dependencies>
+    <dependency>
+            <groupId>org.opentestsystem.shared</groupId>
+            <artifactId>monitoring-alerting.client-interfaces</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+  </dependencies>
+  
+</project>

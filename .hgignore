@@ -1,0 +1,30 @@
+# use glob syntax.
+syntax: glob
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.pmd
+
+# mvn build output
+target/
+bin/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+.springBeans
+*.launch
+.externalToolBuilders
+
+
+# Mac finder
+.DS_Store
+
+*.iml
+
+# checkstyle dot file
+.checkstyle

@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>Smarter Balanced #11 Monitoring and Alerting - Client</name>
+    <artifactId>monitoring-alerting.client</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>org.opentestsystem.shared</groupId>
+        <artifactId>monitoring-alerting-client.parent</artifactId>
+        <version>0.0.4</version>
+    </parent>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven-jar-plugin.version}</version>
+                <!-- add the generation of the test jar as a build step -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+    
+        <dependency>
+            <groupId>org.opentestsystem.shared</groupId>
+            <artifactId>monitoring-alerting.client-interfaces</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+         <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.0.1.RELEASE</version>
+        </dependency>
+    
+
+    </dependencies>
+    
+
+</project>
