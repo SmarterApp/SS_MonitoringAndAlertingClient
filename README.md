@@ -1,9 +1,15 @@
-sb11-monitoring-alerting-client
-===============================
+# Welcome to the Monitoring and Alerting Client project
+The [SmarterApp](http://smarterapp.org) Monitoring and Alerting Client aggregates Logging, Metrics, and Notifications. Log entries and notifications can be searched and managed through a central UI.
 
-Monitoring and Alerting Clients
+## License ##
+This project is licensed under the [AIR Open Source License v1.0](http://www.smarterapp.org/documents/American_Institutes_for_Research_Open_Source_Software_License.pdf).
 
-The Monitoring and Alerting component aggregates Logging, Metrics, and Notifications. Log entries and notifications can be searched and managed through a central UI.
+## Getting Involved ##
+We would be happy to receive feedback on its capabilities, problems, or future enhancements:
+
+* For general questions or discussions, please use the [Forum](forum_link_here).
+* Use the **Issues** link to file bugs or enhancement requests.
+* Feel free to **Fork** this project and develop your changes!
 
 ### Client Modules
 There are three modules that make up the client:
