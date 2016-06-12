@@ -24,9 +24,9 @@
     </properties>
 
     <scm>
-        <connection>scm:hg:https://bitbucket.org/sbacoss/monitoringandalertingclient_release</connection>
-        <developerConnection>scm:hg:https://bitbucket.org/sbacoss/monitoringandalertingclient_release</developerConnection>
-        <url>https://bitbucket.org/sbacoss/monitoringandalerting</url>
+        <connection>scm:git:https://github.com/SmarterApp/MonitoringAndAlertingClient</connection>
+        <developerConnection>scm:git:https://github.com/SmarterApp/MonitoringAndAlertingClient</developerConnection>
+        <url>https://github.com/SmarterApp/MonitoringAndAlertingClient</url>
     </scm>
 
   <build>
