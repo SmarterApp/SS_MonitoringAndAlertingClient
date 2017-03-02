@@ -9,7 +9,7 @@
     <parent>
         <groupId>org.opentestsystem.shared</groupId>
         <artifactId>shared-build-parent</artifactId>
-        <version>0.0.7-SNAPSHOT</version>
+        <version>3.0.0</version>
     </parent>
 
     <modules>
