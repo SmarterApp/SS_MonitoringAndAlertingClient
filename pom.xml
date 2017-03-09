@@ -242,9 +242,9 @@
     </dependencies>
 
     <scm>
-        <connection>scm:git:https://github.com/SmarterApp/SS_MonitoringAndAlerting.git</connection>
-        <developerConnection>scm:git:git://github.com/SmarterApp/SS_MonitoringAndAlerting.git</developerConnection>
-        <url>https://github.com/SmarterApp/SS_MonitoringAndAlerting</url>
+        <connection>scm:git:https://github.com/SmarterApp/SS_MonitoringAndAlertingClient.git</connection>
+        <developerConnection>scm:git:git://github.com/SmarterApp/SS_MonitoringAndAlertingClient.git</developerConnection>
+        <url>https://github.com/SmarterApp/SS_MonitoringAndAlertingClient</url>
         <tag>HEAD</tag>
     </scm>
 
