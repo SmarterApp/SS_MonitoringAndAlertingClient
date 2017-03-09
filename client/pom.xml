@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.opentestsystem.shared</groupId>
         <artifactId>monitoring-alerting-client.parent</artifactId>
-        <version>0.0.4-SNAPSHOT</version>
+        <version>3.0.1-SNAPSHOT</version>
     </parent>
 
     <build>
@@ -16,7 +16,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>${maven-jar-plugin.version}</version>
                 <!-- add the generation of the test jar as a build step -->
                 <executions>
                     <execution>
