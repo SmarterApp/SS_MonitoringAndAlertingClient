@@ -20,7 +20,6 @@
     
     <properties>
         <mockito.version>1.9.5</mockito.version>
-        <sb11-shared-security.version>0.0.1</sb11-shared-security.version>
     </properties>
 
     <build>
