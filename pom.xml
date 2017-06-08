@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>monitoring-alerting-client.parent</artifactId>
-    <version>0.0.4</version>
+    <version>3.1.0.RELEASE</version>
     <name>Smarter Balanced #11 Monitoring and Alerting - Client Parent Project</name>
     <packaging>pom</packaging>
 
     <parent>
         <groupId>org.opentestsystem.shared</groupId>
         <artifactId>shared-build-parent</artifactId>
-        <version>0.0.7</version>
+        <version>3.1.0.RELEASE</version>
     </parent>
 
     <modules>
@@ -20,34 +20,16 @@
     
     <properties>
         <mockito.version>1.9.5</mockito.version>
-        <sb11-shared-security.version>0.0.1</sb11-shared-security.version>
     </properties>
 
-    <scm>
-        <connection>scm:git:https://github.com/SmarterApp/MonitoringAndAlertingClient</connection>
-        <developerConnection>scm:git:https://github.com/SmarterApp/MonitoringAndAlertingClient</developerConnection>
-        <url>https://github.com/SmarterApp/MonitoringAndAlertingClient</url>
-    </scm>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-release-plugin</artifactId>
-             <version>${maven-release-plugin.version}</version>
-             <dependencies>
-                   <dependency>
-                       <groupId>org.apache.maven.scm</groupId>
-                       <artifactId>maven-scm-provider-gitexe</artifactId>
-                       <version>${maven-scm-provider-gitexe.version}</version>
-                   </dependency>
-               </dependencies>
-               <configuration>
-                   <pomFileName>client-modules/pom.xml</pomFileName>
-               </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 
@@ -257,4 +239,19 @@
             <scope>test</scope>
         </dependency>  
     </dependencies>
+
+    <scm>
+        <connection>scm:git:https://github.com/SmarterApp/SS_MonitoringAndAlertingClient.git</connection>
+        <developerConnection>scm:git:git://github.com/SmarterApp/SS_MonitoringAndAlertingClient.git</developerConnection>
+        <url>https://github.com/SmarterApp/SS_MonitoringAndAlertingClient</url>
+        <tag>3.1.0.RELEASE</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>airdev-releases</name>
+            <url>https://airdev.jfrog.io/airdev/libs-releases-local</url>
+        </repository>
+    </distributionManagement>
 </project>
