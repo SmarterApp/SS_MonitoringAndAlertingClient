@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.opentestsystem.shared</groupId>
         <artifactId>monitoring-alerting-client.parent</artifactId>
-        <version>4.0.2-SNAPSHOT</version>
+        <version>4.0.1-SNAPSHOT</version>
     </parent>
 
     <build>
@@ -40,6 +40,4 @@
             <artifactId>spring-security-oauth2</artifactId>
         </dependency>
     </dependencies>
-    
-
 </project>
